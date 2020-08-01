@@ -39,9 +39,9 @@ jobs:
       run: npm run build
     # 设置阿里云OSS的 id/secret，存储到 github 的 secrets 中
     - name: setup aliyun oss
-      uses: weldon/setup-ossutil@master
+      uses: manyuanrong/setup-ossutil@master
       with:
-        endpoint: oss-cn-beijing.aliyuncs.com
+        endpoint: oss-cn-shanghai.aliyuncs.com
         access-key-id: ${{ secrets.OSS_KEY_ID }}
         access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
     - name: 删除冗余文件
